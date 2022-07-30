@@ -1,3 +1,4 @@
+![one](https://user-images.githubusercontent.com/105398204/181934329-832602c0-c557-4e30-9fe7-1316dd693cf2.png)
 # Trilha de Fundamentos de Lógica I <br>
 
 Programa de formação de desenvolvedores da Alura e One Next Education - Oracle.
