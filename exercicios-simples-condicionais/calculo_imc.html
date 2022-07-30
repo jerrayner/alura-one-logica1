@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Idade</title>
+    <style type="text/css">
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: rgb(48, 46, 46);
+        }
+    </style>
+</head>
+<body>
+   
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        function calculaImc(altura, peso) {
+    
+            var imc = peso / (altura * altura);
+            return imc;
+        }
+    
+        var imcCalculado = calculaImc(1.70, 71);
+        mostra("O meu IMC é : " + imcCalculado);
+    </script>
+</body>
+</html>

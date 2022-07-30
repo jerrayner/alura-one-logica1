@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de Idade</title>
+    <style type="text/css">
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: rgb(48, 46, 46);
+        }
+    </style>
+</head>
+<body>
+    <!-- programa que calcula idades com base no ano -->
+
+<script>
+
+function pulaLinha() {
+    // função para pular duas linhas e uma barra sublinhando junto
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write("<strong>" + frase + "</strong>");
+    pulaLinha();
+}
+    
+    var ano = 2022;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+    
+    </script>
+</body>
+</html>

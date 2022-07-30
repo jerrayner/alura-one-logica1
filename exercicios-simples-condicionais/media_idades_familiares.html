@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Média de Idade Familiar</title>
+    <style type="text/css">
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: rgb(48, 46, 46);
+        }
+    </style>
+</head>
+<body>
+<!-- Função usando while para calcular a média das idades de acordo com a quantidade de familiares e idades recebidas -->
+    <script>
+
+        function pulaLinha() {
+        
+            document.write("<br>");
+            document.write("<br>");
+        
+        }
+        
+        function mostra(frase) {
+        
+            document.write(frase);
+            pulaLinha();
+        
+        }
+        
+        var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+        
+        var numero = 1;
+        while(numero <= totalFamiliares) {
+        var totalIdades = 0;
+            var idade = parseInt(prompt("Informe idade do familiar"));
+            totalIdades = totalIdades + idade;
+            numero++;
+        
+        }
+        var mediaDasIdades = Math.round(totalIdades/totalFamiliares); //adicionando o math round para arredondar o resultado
+        mostra("A média das idades dos seus familiares é " + mediaDasIdades);
+        mostra("FIM");
+        </script>
+</body>
+</html>
