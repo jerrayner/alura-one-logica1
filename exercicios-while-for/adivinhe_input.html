@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe pelo input!</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: rgb(48, 46, 46);
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <input type="number">
+    <button>Compare com o meu segredo</button>
+    
+    <script>
+        function getRandom(max) {
+            return Math.floor(Math.random() * max + 1)
+        }
+        alert("Digite um número de 1 a 10! Veja se você adivinha meu pensamento...")
+        var segredo = getRandom(10);
+    
+        var input = document.querySelector("input");
+        input.focus();
+        function verifica() {
+    
+            if(input.value == segredo) {
+    
+            alert("Você ACERTOU!");
+            } else {
+    
+            alert("Você ERROU! O número pensado foi: " + segredo);
+            }
+        
+        input.value = ""; // reinicializando o input para mais uma rodada
+        input.focus();
+
+        }        
+    
+        var button = document.querySelector("button");
+    
+        button.onclick = verifica;
+    
+    </script>
+</body>
+</html>

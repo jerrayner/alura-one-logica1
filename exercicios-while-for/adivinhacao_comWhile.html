@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação Feito com Laço While e Utilizando Break</title>
+    <style type="text/css">
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background-color: rgb(48, 46, 46);
+        }
+    </style>
+</head>
+<body>
+<!-- Função usando while para calcular a média das idades de acordo com a quantidade de familiares e idades recebidas -->
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random() * 10);
+
+var tentativas = 1;
+
+while(tentativas <= 3) {
+
+    var chute = parseInt(prompt("Digite seu chute!"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Você ACERTOU, o número pensado era " + numeroPensado);
+        break;
+
+    } else {
+
+        mostra("Você ERROU!");
+    }
+
+    tentativas++;
+}
+
+mostra("FIM");
+</script>
+</body>
+</html>
